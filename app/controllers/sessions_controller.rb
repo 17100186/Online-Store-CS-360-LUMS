@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+<<<<<<< HEAD
     def new
     end
     
@@ -18,4 +19,24 @@ class SessionsController < ApplicationController
   end
 
     
+=======
+def new
+end
+
+def create
+  user = User.authenticate(params[:email],params[:password])
+  if user
+    session[:user_id] = user.id
+    redirect_to books_path, :notice => "Logged in!"
+  else
+    flash[:notice] = "Inavlid"
+    redirect_to log_in_path
+  end
+end
+
+def destroy
+  session[:user_id] = nil
+  redirect_to root_url, :notice => "Logged out!"
+end
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
 end

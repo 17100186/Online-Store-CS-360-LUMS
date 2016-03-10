@@ -1,5 +1,8 @@
 class BooksController < ApplicationController
+<<<<<<< HEAD
   before_action :require_admin, only: [:index, :show]
+=======
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   # GET /books

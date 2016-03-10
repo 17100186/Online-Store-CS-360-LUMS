@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160309212135) do
 
   create_table "admins", force: :cascade do |t|
@@ -21,6 +22,9 @@ ActiveRecord::Schema.define(version: 20160309212135) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+=======
+ActiveRecord::Schema.define(version: 20160308163940) do
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
 
   create_table "books", force: :cascade do |t|
     t.string   "name"
@@ -43,4 +47,15 @@ ActiveRecord::Schema.define(version: 20160309212135) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
 end

@@ -24,9 +24,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+<<<<<<< HEAD
 # gem "bcrypt-ruby", :require => "bcrypt"
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+=======
+gem "bcrypt-ruby", :require => "bcrypt"
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
 
 # Use Unicorn as the app server
 # gem 'unicorn'

@@ -8,11 +8,18 @@ Rails.application.routes.draw do
   resources :books
   resources :home
   
+<<<<<<< HEAD
   get 'signup'  => 'admins#new' 
   resources :admins
   get 'login'=> 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+=======
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  get "sign_up" => "users#new", :as => "sign_up"
+  resources :users
+>>>>>>> c33b1a0ef979b662fbdf8f496c663676bd106d28
   resources :sessions
   
   # The priority is based upon order of creation: first created -> highest priority.
